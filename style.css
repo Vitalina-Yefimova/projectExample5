@@ -44,7 +44,7 @@
   border: 1px solid #a4a4a4;
   width: 105px;
   height: 35px;
-  margin: 10px;
+  margin: 8px;
 }
 
 .flex_container_fourth_item_large, 
@@ -55,5 +55,67 @@
 .flex_container_fifth_item, 
 .flex_container_fifth_item_large {
   width: 155px;
+}
+
+
+.grid_container_first,
+.grid_container_second,
+.grid_container_third,
+.grid_container_fourth,
+.grid_container_fifth {
+  width: 750px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #a4a4a4;
+  background-color: #eeeeee;
+  display: grid;
+}
+
+.grid_container_first {
+  grid-template-columns: repeat(2, 125px);
+  gap: 500px;
+}
+
+.grid_container_second,
+.grid_container_third {
+  grid-template-columns: 1fr 1fr;
+  gap: 250px;
+}
+
+.grid_container_fourth {
+  height: 100px;
+  grid-template-columns: 125px 125px;
+  justify-content: end;
+}
+
+.grid_container_fifth {
+  height: 100px;
+  grid-template-columns: 170px 170px;
+  justify-content: center;
+}
+
+.grid_container_second_group {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+}
+
+.grid_container_third_group {
+  display: grid;
+  grid-template-columns: repeat(2, 125px);
+}
+
+.grid_container_fourth_group,
+.grid_container_fifth_group {
+  display: grid;
+}
+
+.grid_container_first_item, 
+.grid_container_second_item,
+.grid_container_third_item,
+.grid_container_fourth_item,
+.grid_container_fifth_item {
+  background-color: #cccccc;
+  border: 1px solid #a4a4a4;
+  margin: 6px;
 }
 
